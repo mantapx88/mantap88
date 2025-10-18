@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>Mantap88 — Join & Play Now</title>
+  <meta name="description" content="Mantap88 - Online casino Malaysia & Indonesia. Join Telegram and Play Now. 18+ only.">
+  <link rel="icon" href="assets/Logo001.png">
+  <style>
+    :root {
+      --gold: #f6c453;
+      --gold2: #ffdf99;
+      --amber: #f39c12;
+    }
+    * {box-sizing:border-box;margin:0;padding:0;}
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #000 url('assets/bg-casino.png') center center / cover no-repeat;
+      color:#fff;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+      text-align:center;
+      overflow:hidden;
+      opacity:0;
+      animation:fadeIn 1s ease forwards;
+    }
+    @keyframes fadeIn { to { opacity:1; } }
+
+    .logo-wrap {
+      position: relative;
+      display: inline-block;
+      animation: glow 4s ease-in-out infinite;
+    }
+    .logo {
+      width:140px;
+      height:auto;
+      filter: drop-shadow(0 0 25px rgba(246,196,83,0.4));
+    }
+    @keyframes glow {
+      0%,100% { filter: drop-shadow(0 0 15px rgba(246,196,83,0.4)); }
+      50% { filter: drop-shadow(0 0 35px rgba(246,196,83,0.7)); }
+    }
+
+    h1 {
+      margin-top:12px;
+      font-size:1.5rem;
+      background:linear-gradient(90deg,var(--gold2),var(--gold));
+      -webkit-background-clip:text;
+      color:transparent;
+    }
+
+    .buttons {
+      margin-top:24px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+      align-items:center;
+      justify-content:center;
+    }
+
+    a.btn {
+      position:relative;
+      display:inline-block;
+      width:200px;
+      padding:14px 0;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:700;
+      color:#111;
+      background-image:linear-gradient(180deg,#ffe9b3,var(--gold));
+      box-shadow:0 6px 16px rgba(246,196,83,0.3);
+      overflow:hidden;
+      animation:btnGlow 4s ease-in-out infinite;
+      transition:transform .15s ease, box-shadow .15s ease;
+    }
+    a.btn.secondary {
+      background-image:linear-gradient(180deg,#ffd596,#f39c12);
+    }
+    a.btn:hover {
+      transform:translateY(-2px);
+      box-shadow:0 10px 24px rgba(246,196,83,0.45);
+    }
+    a.btn:active { transform:scale(0.97); }
+
+    /* Glow animation synchronized with logo */
+    @keyframes btnGlow {
+      0%,100% { box-shadow:0 6px 16px rgba(246,196,83,0.3); }
+      50% { box-shadow:0 10px 26px rgba(246,196,83,0.6); }
+    }
+
+    /* Light shimmer sweep */
+    a.btn::after {
+      content:'';
+      position:absolute;
+      top:0;
+      left:-75%;
+      width:50%;
+      height:100%;
+      background:linear-gradient(120deg,rgba(255,255,255,0) 0%,rgba(255,255,255,0.4) 50%,rgba(255,255,255,0) 100%);
+      transform:skewX(-25deg);
+      animation:shimmer 6s ease-in-out infinite;
+    }
+    @keyframes shimmer {
+      0% { left:-75%; }
+      50% { left:125%; }
+      100% { left:125%; }
+    }
+
+    footer {
+      position:absolute;
+      bottom:12px;
+      font-size:0.8rem;
+      color:#ccc;
+      opacity:0.9;
+    }
+    @media(max-width:480px){
+      .logo{width:120px;}
+      a.btn{width:180px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-wrap">
+    <img src="assets/Logo001.png" alt="Mantap88 Logo" class="logo">
+  </div>
+  <h1>Mantap88 — Kasino Dalam Talian</h1>
+  <div class="buttons">
+    <a href="https://t.me/mantap88_chatroom" class="btn">🚀 Join Telegram</a>
+    <a href="https://wa.me/60173380533" class="btn secondary">🎰 Play Now</a>
+  </div>
+  <footer>&copy; 2025 Mantap88. Semua Hak Terpelihara.</footer>
+</body>
+</html>
